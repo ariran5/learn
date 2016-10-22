@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'bauhaus';
+  src: url('../fonts/bauhaus.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoCyrl';
+  src: url('../fonts/MuseoCyrl.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FiveMinutes';
+  src: url('../fonts/FiveMinutes.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/lato.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'luga';
+  src: url('../fonts/Luga.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.siteTopPage {
+  height: 100%;
+  background: #f44336;
+  color: #5a1010;
+}
+.siteTopPage .siteNav {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+.siteTopPage .siteNav h1 {
+  font-size: 2em;
+  font-family: 'FiveMinutes';
+  text-align: center;
+  padding: 30px;
+}
+.siteTopPage .siteNav .menu {
+  text-align: center;
+  background: #cd4336;
+  padding: 24px;
+  margin: 10px;
+  cursor: pointer;
+  border: 4px solid #e34336;
+  color: #5a1010;
+  font-size: 1.3em;
+  font-family: 'bauhaus';
+  display: inline-block;
+  padding: 18px;
+  margin: 16px;
+}
+.siteTopPage .verticalAlignMethod {
+  height: 100%;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.article1 {
+  background: #fff;
+}
+.article1 .propertiesNames h3 {
+  background: #904c9c;
+  border: 4px solid #7d1f8d;
+  color: #E6E1EF;
+}
+.article1 .listContainer .propertiesList {
+  background: #f3efe5;
+}
+.article1 .listContainer .propertiesList h3 {
+  border: 4px solid #7d1f8d;
+  color: #E6E1EF;
+  background: #9537a5;
+}
+.article1 .listContainer .propertiesList h6 {
+  background: #0000001a;
+}
+.article1 .listContainer .propertiesList .function {
+  color: #0c8af0;
+}
+.article1 .listContainer .propertiesList .property {
+  color: #f33434;
+}
+.article1 .listContainer .propertiesList .method {
+  color: black;
+}
+.article2 {
+  background: #f3efe5;
+}
+.article2 .propertiesNames h3 {
+  background: #5e36a5;
+  border: 4px solid #5e36a5;
+  color: #E6E1EF;
+}
+.article2 .listContainer .propertiesList {
+  background: #fff;
+}
+.article2 .listContainer .propertiesList h3 {
+  border: 4px solid #5e36a5;
+  color: #E6E1EF;
+  background: #5e36a5;
+}
+.article2 .listContainer .propertiesList h6 {
+  background: #0000001a;
+}
+.article2 .listContainer .propertiesList .function {
+  color: #0c8af0;
+}
+.article2 .listContainer .propertiesList .property {
+  color: #f33434;
+}
+.article2 .listContainer .propertiesList .method {
+  color: black;
+}
+.propertiesNames {
+  text-align: center;
+  padding: 100px 100 50px;
+}
+.propertiesNames h3 {
+  font-size: 1.3em;
+  font-family: 'lato';
+  display: inline-block;
+  padding: 8px 22px;
+  margin: 7px;
+}
+.listContainer {
+  text-align: center;
+  padding: 50px 50px 100px;
+}
+.listContainer .propertiesList {
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  min-width: 250px;
+}
+.listContainer .propertiesList h3 {
+  font-family: 'Museocyrl';
+  display: inline-block;
+  padding: 8px 22px;
+  margin: 16px 10px 0;
+}
+.listContainer .propertiesList h6 {
+  padding: 8px 15px;
+  font-family: helvetica;
+  margin: 0;
+  float: right;
+  opacity: 0.5;
+}
+.listContainer .propertiesList p {
+  font-family: 'MuseoCyrl';
+  text-align: left;
+  padding: 10px 20px 30px;
+  margin: 0;
+}
