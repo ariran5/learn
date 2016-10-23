@@ -8,13 +8,13 @@
 			this.json = json;
 			this.createArticle(i);
 			if (names) {
-				this.titleButtons(json);
+				this.titleButtons();
 			}
 			if (list) {
-				this.listElements(json);
+				this.listElements();
 			}
 			if (examples) {
-				this.titleButtons(json);
+				this.titleButtons();
 			}
 			this.appendArticle();
 	
@@ -25,11 +25,11 @@
 			this.article.classList.add(this.json.name);
 		}
 	
-		titleButtons(json) {
+		titleButtons() {
 			function createNameBtn() {
 				var h3 = document.createElement('h3');
-				h3.innerHTML = json[i].name;
-				h3.setAttribute('data-anchor',json[i].data)
+				h3.innerHTML = this.json[i].name;
+				h3.setAttribute('data-anchor',this.json[i].data)
 
 				function dataAnchor() {
 					var a = this.dataset.anchor;
@@ -50,32 +50,32 @@
 			var div = document.createElement('div');
 			div.className = 'propertiesNames';
 	
-			for (var i = 0; i < json.length; i++) {
+			for (var i = 0; i < this.json.length; i++) {
 	
-				div.append(createNameBtn(json));
+				div.append(createNameBtn.call(this));
 			}
 	
 			this.article.append(div);
 		}
 	
-		listElements(json) {
+		listElements() {
 			function createElem() {
 		
 				var div = document.createElement('div');
-				div.className = 'propertiesList' + ' js-' + json[i].data;
+				div.className = 'propertiesList' + ' js-' + this.json[i].data;
 		
 				var h3 = document.createElement('h3');
 				var h6 = document.createElement('h6');
 				var p = document.createElement('p');
 		
-				h3.innerHTML = json[i].name;
+				h3.innerHTML = this.json[i].name;
 				div.append(h3);
 		
-				h6.className = json[i].actionType;
-				h6.innerHTML = json[i].actionType;
+				h6.className = this.json[i].actionType;
+				h6.innerHTML = this.json[i].actionType;
 				div.append(h6);
 		
-				p.innerHTML = json[i].value;
+				p.innerHTML = this.json[i].value;
 				div.append(p);
 		
 				divListCantainer.append(div);
@@ -85,8 +85,8 @@
 			divListCantainer.classList.add('listContainer');
 	
 			this.article.append(divListCantainer);
-			for (var i = 0; i < json.length; i++) {
-				createElem();
+			for (var i = 0; i < this.json.length; i++) {
+				createElem.call(this);
 			}
 		}	
 	
